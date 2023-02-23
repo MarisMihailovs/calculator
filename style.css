@@ -92,9 +92,28 @@ button {
 button:hover {
   box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.6);
   scale: 1.02;
+  filter: brightness(105%);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+button:focus {
+  outline: none;
 }
 
 .equal-sign {
   grid-column: -2;
   grid-row: 2 / span 4;
+  background: green;
+}
+
+
+/* media query : large smartphone vertical */
+
+@media screen and (max-width: 600px) {
+  .calculator {
+    width: 95%;
+  }
 }
